@@ -18,9 +18,9 @@ void howmany_str(char *);
 
 void main(void)
 {
-    char str[256] = {'a', 'k', 'i', 'h', 'i', 'r', 'o', '\n'};
+    char str[256];
     printf("文字を入力して下さい→ ");
-    fgets(str, 256, stdin);
+    fgets(str, sizeof(str), stdin);
     // printf("str = %s\n", str);
     howmany_str(str);
 }
